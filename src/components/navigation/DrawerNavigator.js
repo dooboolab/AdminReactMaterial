@@ -14,6 +14,8 @@ import { mailFolderListItems, otherMailFolderListItems } from './DrawerMenu';
 
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 import Home from '../screen/Home';
+import Table from '../screen/Table';
+import Product from '../screen/Product';
 
 const drawerWidth = 240;
 
@@ -135,6 +137,8 @@ class ResponsiveDrawer extends React.Component<Props, State> {
           <div className={classes.toolbar} />
           <Switch>
             <Route path='/home' component={Home} />
+            <Route path='/table' component={Table} />
+            <Route path='/product/:id' component={Product} />
           </Switch>
         </main>
       </div>

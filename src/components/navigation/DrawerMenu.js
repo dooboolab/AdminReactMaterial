@@ -11,6 +11,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import LinkIcon from '@material-ui/icons/Link';
 import DeleteIcon from '@material-ui/icons/Delete';
 import ReportIcon from '@material-ui/icons/Report';
+import Table from '@material-ui/core/Table';
 
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 
@@ -20,17 +21,35 @@ export const mailFolderListItems = (
       <ListItemIcon>
         <PhoneAndroidIcon />
       </ListItemIcon>
-      <ListItemText primary="Flutter" />
+      <ListItemText primary="Utils" />
     </ListItem>
-    <ListItem button>
-      <ListItemText secondary="Menu 1" />
-    </ListItem>
-    <ListItem button>
-      <ListItemText secondary="Menu 2" />
-    </ListItem>
-    <ListItem button>
-      <ListItemText secondary="Menu 3" />
-    </ListItem>
+    <NavLink
+      exact={true}
+      to='/table'
+      key={0}
+    >
+      <ListItem button>
+        <ListItemText secondary="Table 1" />
+      </ListItem>
+    </NavLink>
+    <NavLink
+      exact={true}
+      to='/home'
+      key={1}
+    >
+      <ListItem button>
+        <ListItemText secondary="Menu 2" />
+      </ListItem>
+    </NavLink>
+    <NavLink
+      exact={true}
+      to='/home'
+      key={2}
+    >
+      <ListItem button>
+        <ListItemText secondary="Menu 3" />
+      </ListItem>
+    </NavLink>
   </div>
 );
 
