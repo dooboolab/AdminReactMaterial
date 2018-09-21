@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { inject, observer } from 'mobx-react';
 
-import Intro from '../screen/Intro';
+// import Intro from '../screen/Intro';
 import NotFound from '../screen/NotFound';
+import DrawerNavigator from './DrawerNavigator';
 
 type Props = {
   store: any;
@@ -26,7 +27,7 @@ class RootStackNavigator extends Component<Props, State> {
       <BrowserRouter>
         <div style={{ textAlign: 'center' }}>
           <Switch>
-            <Route exact={true} path='/' component={Intro} />
+            <Route exact={true} path='' component={DrawerNavigator} />
             <Route component={NotFound} />
           </Switch>
         </div>

@@ -2,12 +2,12 @@ import React from 'react';
 import { shallow, render } from 'enzyme';
 
 import appStore from '../../../stores/appStore';
-import Intro from '../Intro';
+import Home from '../Home';
 
 // test for the container page in dom
-describe('Intro page DOM rendering test', () => {
+describe('Home page DOM rendering test', () => {
   const page = shallow(
-    <Intro store={appStore} />,
+    <Home store={appStore} />,
   );
 
   it('Tab1 page has to be matched to snapshot', () => {

@@ -6,6 +6,13 @@ import RootStackNavigator from './components/navigation/RootStackNavigator';
 import Store from './stores/appStore';
 import Localization from './models/Localization';
 
+import firebase from 'firebase';
+
+// const firebaseConfig = {
+
+// };
+// firebase.initializeApp(firebaseConfig);
+
 // tslint:disable-next-line:no-var-requires
 const store = new Store();
 store.user.checkLoginStatus();
