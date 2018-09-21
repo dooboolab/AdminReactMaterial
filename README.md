@@ -1,4 +1,5 @@
-# React Starter with Flow
+# ADMIN REACT MATERIAL STARTER
+<img src="https://github.com/dooboolab/AdminReactMaterial/blob/master/docs/preview.png"/>
 > Specification
 * postcss
 * flow
